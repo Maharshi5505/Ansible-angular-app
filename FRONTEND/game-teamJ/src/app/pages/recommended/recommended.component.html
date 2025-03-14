@@ -1,0 +1,9 @@
+<div class="p-9">
+    <h2 class="text-3xl font-bold text-gray-800 mt-12">Searched results for search game:</h2>
+  
+    <!-- Game Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-4">
+      <app-game-card *ngFor="let game of games" [game]="game"></app-game-card>
+    </div>
+  </div>
+  

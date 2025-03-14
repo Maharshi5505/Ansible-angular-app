@@ -1,0 +1,6 @@
+/* Enable scrolling */
+.p-10 {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  

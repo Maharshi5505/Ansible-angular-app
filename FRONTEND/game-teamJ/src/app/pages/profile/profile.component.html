@@ -1,0 +1,48 @@
+<div class="container mx-auto p-6 pt-24 relative">
+  <!-- Back Button -->
+  <button 
+    (click)="goBack()" 
+    class="absolute top-20 left-0 mt-6 ml-6 px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-800 transition"
+  >
+    ⬅ Back
+  </button>
+
+  <!-- Profile Card -->
+  <div class="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto text-center">
+    <div class="flex flex-col items-center">
+      <div class="w-24 h-24 bg-gray-300 rounded-full"></div> <!-- Profile Picture -->
+      <h2 class="text-xl font-bold mt-4">John Doe</h2>
+      <p class="text-gray-500">johnexample.com</p>
+      <button class="mt-4 px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-800 transition">
+        🔑 Change Password
+      </button>
+    </div>
+  </div>
+
+
+
+
+  <!-- Favorite Games Section -->
+  <div class="mt-8">
+    <h3 class="text-xl font-bold">Favorite Games</h3>
+    <div class="grid grid-cols-2 gap-4 mt-4">
+      <div class="bg-white p-4 rounded-lg shadow">
+        <img src="assets/game.jpg" class="rounded">
+        <div class="flex justify-between items-center mt-2">
+          <span class="font-bold">The Last Adventure</span>
+          <span class="text-sm bg-gray-200 px-2 py-1 rounded">⭐ 9.5</span>
+        </div>
+        <span class="text-xs bg-gray-300 px-2 py-1 rounded mt-2">Action Adventure</span>
+      </div>
+      
+      <div class="bg-white p-4 rounded-lg shadow">
+        <img src="assets/game.jpg" class="rounded">
+        <div class="flex justify-between items-center mt-2">
+          <span class="font-bold">Cyber Revolution</span>
+          <span class="text-sm bg-gray-200 px-2 py-1 rounded">⭐ 9.2</span>
+        </div>
+        <span class="text-xs bg-gray-300 px-2 py-1 rounded mt-2">RPG</span>
+      </div>
+    </div>
+  </div>
+</div>

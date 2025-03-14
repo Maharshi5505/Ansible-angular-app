@@ -1,0 +1,38 @@
+<!-- Add padding to prevent header from blocking content -->
+<div class="pt-18 ">
+  <!-- Search Section -->
+  <div class="relative h-[80vh] bg-black text-white">
+    <img
+      src="assets/search.jpg"
+      class="absolute inset-0 w-full h-full object-cover filter blur-md"
+      style="opacity: 0.6"
+    />
+
+    <div
+      class="absolute inset-0 flex flex-col items-center justify-center text-center"
+    >
+      <h1 class="text-4xl font-bold">Find & Play Your Favorite Games</h1>
+      <p class="mt-2 text-lg">Discover the best games across all genres</p>
+      <div class="mt-4 flex">
+        <input
+          type="text"
+          class="px-4 py-2 text-black w-96 rounded"
+          placeholder="Search games..."
+        />
+        <button (click)="search()" class="ml-2 px-6 py-2 bg-red-600 text-white rounded">
+          Search
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Down to See the Game Listings -->
+  <section class="p-6">
+    <ng-container *ngFor="let category of gameCategories">
+      <app-game-section
+        [genre]="category.genre"
+        [games]="category.games"
+      ></app-game-section>
+    </ng-container>
+  </section>
+</div>
